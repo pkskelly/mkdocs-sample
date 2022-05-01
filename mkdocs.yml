@@ -1,0 +1,29 @@
+site_name: T4 Engineering Manual
+site_url: https://t4.github.io/engineeringmanual
+
+site_description: Transport4 Engineering Manual
+site_author: Pete Skelly
+
+nav:
+  - Home:
+    - 'index.md'
+
+  - Agile:
+    - Work Item Prioritization: './agile/work-item-prioritization.md'
+    - Work Item States: './agile/work-item-states.md'
+theme:
+    name: 'material'
+    palette:
+        primary: 'red'
+    features:
+        - navigation.tabs
+
+plugins:
+  - mermaid2:
+      version: 8.6.4
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+  - pdf-export:
+      verbose: true
+      media_type: print
+      combined: true
