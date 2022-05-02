@@ -23,11 +23,11 @@ RUN apt-get update && apt-get install -y \
   && rm -rf /var/lib/apt/lists/*
 
 
-RUN pip3 install mkdocs-material==7.1.7 pymdown-extensions==9.0 mkdocs-mermaid2-plugin mkdocs-pdf-export-plugin mkdocs-git-revision-date-localized-plugin
+# RUN pip3 install mkdocs-material==7.1.7 pymdown-extensions==9.0 mkdocs-mermaid2-plugin mkdocs-pdf-export-plugin mkdocs-git-revision-date-localized-plugin
 
-# # [Optional] If your pip requirements rarely change, uncomment this section to add them to the image.
-# COPY requirements-docs.txt /tmp/pip-tmp/
-# RUN pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements-docs.txt && rm -rf /tmp/pip-tmp
+# [Optional] If your pip requirements rarely change, uncomment this section to add them to the image.
+COPY requirements-docs.txt /tmp/pip-tmp/
+RUN pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements-docs.txt && rm -rf /tmp/pip-tmp
 
 RUN useradd \
   --user-group \

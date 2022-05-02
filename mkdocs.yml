@@ -7,10 +7,11 @@ site_author: Pete Skelly
 nav:
   - Home:
     - 'index.md'
-
   - Agile:
+    - Daly Standup: './agile/daily-standup.md'
     - Work Item Prioritization: './agile/work-item-prioritization.md'
     - Work Item States: './agile/work-item-states.md'
+
 theme:
     name: 'material'
     palette:

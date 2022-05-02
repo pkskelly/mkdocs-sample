@@ -1,6 +1,7 @@
 {
 	"name": "T4 Manual",
 	"dockerFile": "Dockerfile",
+	"context": "..",
 	"settings": {
 	  "terminal.integrated.profiles.linux": {
 		"zsh": {
