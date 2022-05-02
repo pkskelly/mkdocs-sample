@@ -15,19 +15,19 @@ RUN apt-get update && apt-get install -y \
   zsh \
   jq \
   vim \
-  python3.8 \
+  python3.9 \
   python3-pip \
   weasyprint \
   && curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash - \
   && apt-get install nodejs -y \
   && rm -rf /var/lib/apt/lists/*
 
+
 RUN pip3 install mkdocs-material==7.1.7 pymdown-extensions==9.0 mkdocs-mermaid2-plugin mkdocs-pdf-export-plugin mkdocs-git-revision-date-localized-plugin
 
 # # [Optional] If your pip requirements rarely change, uncomment this section to add them to the image.
 # COPY requirements-docs.txt /tmp/pip-tmp/
-# RUN pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements-docs.txt \
-#   && rm -rf /tmp/pip-tmp
+# RUN pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements-docs.txt && rm -rf /tmp/pip-tmp
 
 RUN useradd \
   --user-group \
@@ -51,4 +51,4 @@ RUN zsh -c "$(curl https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mast
  && sed -i "73s/plugins=(git)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting)/" ~/.zshrc \
  && sed -i "50s/# COMPLETION_WAITING_DOTS/COMPLETION_WAITING_DOTS/" ~/.zshrc
 
-CMD [ "/bin/zsh", "-l" ]
+CMD [ "/bin/zsh", "-l
