@@ -4,6 +4,8 @@ site_url: https://pkskelly.github.io/mkdocs-sample/
 site_description: Transport4 Engineering Manual
 site_author: Pete Skelly
 
+repo_url: https://pkskelly.github.io/mkdocs-sample
+
 nav:
   - Home:
     - 'index.md'
