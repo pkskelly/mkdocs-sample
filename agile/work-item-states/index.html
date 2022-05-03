@@ -1,0 +1,547 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Transport4 Engineering Manual" name="description"/>
+<meta content="Pete Skelly" name="author"/>
+<link href="https://t4.github.io/engineeringmanual/agile/work-item-states/" rel="canonical"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.3.0, mkdocs-material-7.1.7" name="generator"/>
+<title>Work Item States - T4 Engineering Manual</title>
+<link href="../../assets/stylesheets/main.ca7ac06f.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.f1a3b89f.min.css" rel="stylesheet"/>
+<meta content="#ef5552" name="theme-color"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+</head>
+<body data-md-color-accent="" data-md-color-primary="red" data-md-color-scheme="" dir="ltr">
+<script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#work-item-states">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="T4 Engineering Manual" class="md-header__button md-logo" data-md-component="logo" href="../.." title="T4 Engineering Manual">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            T4 Engineering Manual
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Work Item States
+            
+          </span>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+        Home
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../daily-standup/">
+        Agile
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="T4 Engineering Manual" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="T4 Engineering Manual">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+    T4 Engineering Manual
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" id="__nav_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1">
+        Home
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Home" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_1">
+<span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        Welcome to MkDocs
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+        Agile
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Agile" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          Agile
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../daily-standup/">
+        Daly Standup
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../work-item-prioritization/">
+        Work Item Prioritization
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Work Item States
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Work Item States
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#epic-states">
+    Epic States
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#epic-state-transitions">
+    Epic State Transitions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#feature-states">
+    Feature States
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#-should-development-team-be-changing-any-of-the-feature-level-states-does-this-impact-devops-and-deployments-should-state-changes-be-made-by-devops">
+    - Should Development Team be changing any of the Feature level states? Does this impact DevOPs and deployments? Should state changes be made by DevOps.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#feature-state-transitions">
+    Feature State Transitions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#user-story">
+    User Story
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#epic-states">
+    Epic States
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#epic-state-transitions">
+    Epic State Transitions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#feature-states">
+    Feature States
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#-should-development-team-be-changing-any-of-the-feature-level-states-does-this-impact-devops-and-deployments-should-state-changes-be-made-by-devops">
+    - Should Development Team be changing any of the Feature level states? Does this impact DevOPs and deployments? Should state changes be made by DevOps.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#feature-state-transitions">
+    Feature State Transitions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#user-story">
+    User Story
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset"><a class="md-content__button md-icon" download href="../../pdf/combined.pdf" title="PDF Export"><svg style="height: 1.2rem; width: 1.2rem;" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"></path></svg></a>
+<h1 id="work-item-states">Work Item States</h1>
+<p>These diagrams are enabled in mkdocs using <a href="https://github.com/fralau/mkdocs-mermaid2-plugin">the Mermaid Plugin</a></p>
+<p>Work Items are managed by state in order to ensure <a href="../work-item-prioritization/">priority is set</a>, requirements are gathered, and progress is tracked across product release stages.  While some differences in the definitions of Epic and Feature for Hybrid and Emergent work, the states are applied the same across work item types.</p>
+<h2 id="epic-states">Epic States</h2>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>State</strong></th>
+<th align="left"><strong>Definition</strong></th>
+<th align="left"><strong>Transitions</strong></th>
+<th align="left"><strong>Notes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Not Started</td>
+<td align="left">Remains Not Started until work has begun at the Team level for any child item(s)</td>
+<td align="left">Product Management changes state to InProgress, Closed or On Hold</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">In Progress</td>
+<td align="left">When the team is actively working on any child item(s) of an Epic it is "In Progress"</td>
+<td align="left">Product Management changes state to Closed or On Hold</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Closed</td>
+<td align="left">When all child work items are complete and there are no plans to add new items.</td>
+<td align="left">Product Management will not change state from Closed</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">On Hold</td>
+<td align="left">If (for any reason) work is stopped, status is changed to On Hold while work is not being done.</td>
+<td align="left">Product Management changes state to Closed or In Progress</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="epic-state-transitions">Epic State Transitions</h2>
+<div class="mermaid">stateDiagram-v2
+    [*] --&gt; NotStarted
+    NotStarted --&gt; InProgress
+    InProgress --&gt; Closed
+    InProgress --&gt; OnHold
+    OnHold --&gt; InProgress
+    OnHold --&gt; Closed
+    Closed --&gt; [*]
+
+</div>
+<h2 id="feature-states">Feature States</h2>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>State</strong></th>
+<th align="left"><strong>Definition</strong></th>
+<th align="left"><strong>Transitions</strong></th>
+<th align="left"><strong>Notes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Proposed</td>
+<td align="left">Work has been determined, still may require refinements to overall features</td>
+<td align="left">Prod Mgmt changes from proposed to Approved, could move to InProgress</td>
+<td align="left">This is independent of Paid feature, T4 funded, or other types of Feature.  Approved typically represents a customer funded project feature.</td>
+</tr>
+<tr>
+<td align="left">Approved</td>
+<td align="left">Feature was approved by customer (if paid) or T4 and ready for user stories.</td>
+<td align="left">Prod Mgmt can change to In Progress or On Hold</td>
+<td align="left">Indicates that user stories can be created for this feature.  <strong>Why would a T4 Feature ever be in this state?</strong></td>
+</tr>
+<tr>
+<td align="left">In Progress</td>
+<td align="left">At least one User Story have been completed (requirements) and Feature (or children) is actively being developed</td>
+<td align="left">ProdMgmt can change to OnHold, Closed, Cancelled</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">On Hold</td>
+<td align="left">If (for any reason) work is stopped, status is changed to On Hold while work is not being done.</td>
+<td align="left">ProdMgmt can change to Approved, InProgress, Cancelled</td>
+<td align="left">e.g. this might be due to customer's blocking, not providing data, etc.</td>
+</tr>
+<tr>
+<td align="left">Beta</td>
+<td align="left">???</td>
+<td align="left">???</td>
+<td align="left">This is no longer needed for Features, Features would be left InProgress by ProdMgmt</td>
+</tr>
+<tr>
+<td align="left">UAT</td>
+<td align="left">???</td>
+<td align="left">???</td>
+<td align="left">This is no longer needed for Features, Features would be left InProgress by ProdMgmt</td>
+</tr>
+<tr>
+<td align="left">Closed</td>
+<td align="left">All requirements are met, all child work items meet "Definition of Done" and the feature is released to Production</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Cancelled</td>
+<td align="left">Determined work was not needed, or could be cancelled by customer (if paid)</td>
+<td align="left">Should not change state after this</td>
+<td align="left">Code may have been written, but is not releasable</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Questions:</strong></p>
+<h2 id="-should-development-team-be-changing-any-of-the-feature-level-states-does-this-impact-devops-and-deployments-should-state-changes-be-made-by-devops">- Should Development Team be changing any of the Feature level states? Does this impact DevOPs and deployments? Should state changes be made by DevOps.</h2>
+<ul>
+<li>When are Features prioritized and planned in the Roadmap and how is this indicated in a status?</li>
+</ul>
+<h2 id="feature-state-transitions">Feature State Transitions</h2>
+<div class="mermaid">stateDiagram-v2
+    [*]--&gt; Proposed
+    Proposed--&gt;Approved : Customer Funded
+        note right of Approved
+            Customer Paid features should 
+            be scoped to a single Feature
+        end note
+    Proposed--&gt;InProgress
+    Approved--&gt;InProgress
+    Approved--&gt;OnHold
+    InProgress--&gt;OnHold
+    InProgress--&gt;Cancelled
+    InProgress--&gt;Closed
+    OnHold--&gt;Approved : Wouldn't Blocked be better?
+    OnHold--&gt;InProgress
+    OnHold--&gt;Cancelled
+    Closed --&gt; [*]
+    Cancelled --&gt; [*]
+
+</div>
+<h2 id="user-story">User Story</h2>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>State</strong></th>
+<th align="left"><strong>Definition</strong></th>
+<th align="left"><strong>Transitions</strong></th>
+<th align="left"><strong>Notes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">To Do</td>
+<td align="left">Work has not begun</td>
+<td align="left">Prod Dev changes to BizReqs, TechSpecs,</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Ready for Refinement</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Business Requirements</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Technical Specifications</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">If this was done in Tasks, then there may be no need for this.</td>
+</tr>
+<tr>
+<td align="left">In Development</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Blocked</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">In Code Review</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">QA</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Alpha</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Beta</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">UAT</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Ready for QA</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">Why have this and QA? Elena mentioned she works in QA and Priya works in Ready for QA. Why is there a status for a single person?</td>
+</tr>
+<tr>
+<td align="left">Pending QA Deployment</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Pending Merge</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Closed</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<p>If you have multiple items within the same priority tier, refer to the Severity or Priority on the work item. As usual, if you are still uncertain, you should ask the Product Manager, Scrum Master, or Technical Program Manager.</p>
+<p>Do we need a state that indicates "Business Requirements Under Dev" or does "Business Development" cover this?</p>
+<h1 id="user-story-state-transitions">User Story State Transitions</h1>
+<div class="mermaid">stateDiagram-v2
+    [*]--&gt;ProdMgmt
+    state :  ProdMgmt {
+        ToDo--&gt;ReadyForRefinement
+        ReadyForRefinement--&gt;BizReqs 
+        BizReqs--&gt;TechSpecs : Requirements and Story Pointing
+            note right of BizReqs
+                During the Refinement
+                Meeting
+            end note
+    }
+    state :  ProdDev {
+        TechSpecs--&gt;InDevelopment
+        InDevelopment--&gt;InCodeReview
+        InCodeReview--&gt;PendingMerge
+        PendingMerge--&gt;ReadyForQA
+        ReadyForQA--&gt;QA
+        QA--&gt;InDevelopment : Defect created
+        QA--&gt;Closed
+    }
+    Closed--&gt;[*]
+
+
+</div>
+<hr/>
+<div class="md-source-date">
+<small>
+    
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 1, 2022</span>
+</small>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Work Item Prioritization" class="md-footer__link md-footer__link--prev" href="../work-item-prioritization/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Work Item Prioritization
+            </div>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+          Material for MkDocs
+        </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.b0710199.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.76f349be.min.js"></script>
+<script src="https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js"></script><script>mermaid.initialize({});</script></body>
+</html>
