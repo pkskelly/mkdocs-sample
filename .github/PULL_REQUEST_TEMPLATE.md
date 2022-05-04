@@ -56,11 +56,6 @@ Pull requests submitted to other branches will be rejected.
 - [ ] Do your changes satisfy the functional requirements or fix the bug?
 - [ ] Is all debugging code removed (SQL print statements, console.log, debug: true, etc)?
 - [ ] Is your code clean enough for the reviewer or another developer to easily understand at first glance?
-- [ ] Update work item status to Pending QA Deployment
-- [ ] I have performed a self-review of my own code
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
-- [ ] My changes generate no new warnings
-- [ ] I have added tests that prove my fix is effective or that my feature works
-- [ ] New and existing unit tests pass locally with my changes
-- [ ] Any dependent changes have been merged and published in downstream modules
+- [ ] Did you update the work item status?
+- [ ] Did you update any associated documentation?
+- [ ] Do all your unit tests pass locally?
