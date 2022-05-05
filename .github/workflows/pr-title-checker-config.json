@@ -1,17 +1,17 @@
 {
-    "LABEL": {
-      "name": "Missing DevOps Link",
-      "color": "EEEEEE"
-    },
-    "CHECKS": {
-      "prefixes": ["fix: ", "feat: "],
-      "regexp": "AB\\(#[0-9]\\): ",
-      "regexpFlags": "i",
-      "ignoreLabels" : ["dont-check-PRs-with-this-label", "meta"]
-    },
-    "MESSAGES": {
-      "success": "All OK",
-      "failure": "Failing CI test",
-      "notice": "Missing DevOps Work Item Link"
-    }
+  "LABEL": {
+    "name": "Missing DevOps Link",
+    "color": "EEEEEE"
+  },
+  "CHECKS": {
+    "prefixes": ["fix: ", "feat:"],
+    "regexp": "AB\\#\\d{2,8}$",
+    "regexpFlags": "i",
+    "ignoreLabels" : ["dont-check-PRs-with-this-label", "meta"]
+  },
+  "MESSAGES": {
+    "success": "All OK",
+    "failure": "Failing CI test",
+    "notice": "Missing DevOps Work Item Link"
   }
+}
