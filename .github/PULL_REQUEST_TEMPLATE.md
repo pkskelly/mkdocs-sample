@@ -2,11 +2,11 @@
 
 For your PR to be reviewed and merged as quickly as possible, please review and adhere to the pull request process.
 
-## Pull Request Title
+## Pull Request Title (replace with PR Title)
 
-Please ensure that you have included a meaningful title describing your change. All Pull Requests MUST have a related Azure DevOps Work Item, changes not linked to an Azure DevOps Work Item will not be accepted.
+Please ensure that you have included a meaningful title describing your change. All Pull Requests MUST have a related Azure DevOps Work Item, PR's not linked to an Azure DevOps Work Item **SHOULD NOT BE APPROVED**.
 
-You should link your pull request to an open issue using the `AB#nnnnn` syntax where `nnnnn` is the Work Item Id. This will ensure that the Work Item is automatically linked when your pull request is merged.
+You should link your pull request to an open Work Item using the `AB#nnnnn` syntax where `nnnnn` is the Work Item Id. This will ensure that the Work Item is automatically linked when your pull request is merged.
 
 > Remove this section when completed.
 
@@ -21,21 +21,6 @@ You should link your pull request to an open issue using the `AB#nnnnn` syntax w
 
 > Provide a meaningful description to assist with team members who will review and merge your code. Remove this line when completed.
 
-## Avoiding Merge Conflicts
-
-Merge conflicts occur when the branch you want to merge is out of date. To ensure this does not happen, you should ensure that your branch is up-to-date before submitting your pull request by executing the below git commands.
-
-```bash
-    git checkout main
-    git pull upstream main
-    git push origin main
-    git checkout <your-branch>
-    git rebase main
-    git push origin <your-branch> -f
-```
-
-> Remove this section when completed.
-
 ## Pull Request Branch
 
 You should only submit your changes to the **beta** branch.
@@ -48,7 +33,7 @@ Pull requests submitted to other branches will be rejected.
 
 - [ ] Did you follow [Branch Naming Guidelines](https://github.com/transport4/documents/wiki/Branching-Conventions)?
 - [ ] Did you PR to the correct base branch (beta vs. hotfix)?
-- [ ] Did you link the commit/PR title with the correct DvOps Work Item?
+- [ ] Did you link the commit/PR title with the correct DevOps Work Item?
 - [ ] Did you merge master into your branch to reduce conflicts?
 - [ ] Does your code build?
 - [ ] Does your database successfully deploy?
