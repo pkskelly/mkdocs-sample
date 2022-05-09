@@ -1,7 +1,7 @@
 {
     "LABEL": {
       "name": "Missing DevOps Link",
-      "color": "EEEEEE"
+      "color": "FF0000"
     },
     "CHECKS": {
       "regexp": "\\b(AB#[0-9]{2,8}):*\\b",
