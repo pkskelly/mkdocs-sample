@@ -23,9 +23,9 @@ if (CHECKS.regexp) {
     tests.forEach(test => {
         let outCome = re.test(test.testCase);
         if (outCome) {
-            console.log('PASS:  '+ test.testCase + ' ' + MESSAGES.success);
+            console.log('\x1b[92mPASS:\x1b[0m:  '+ test.testCase + ' ' + MESSAGES.success);
         } else {
-            console.log('FAIL:  '+ test.testCase + ' ' + MESSAGES.notice);
+            console.log('\x1b[91mFAIL:\x1b[0m:  '+ test.testCase + ' ' + MESSAGES.notice);
         }
     });
 }
