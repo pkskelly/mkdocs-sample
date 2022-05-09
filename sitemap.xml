@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://pkskelly.github.io/mkdocs-sample/</loc>
-         <lastmod>2022-05-05</lastmod>
+         <lastmod>2022-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pkskelly.github.io/mkdocs-sample/agile/daily-standup/</loc>
-         <lastmod>2022-05-05</lastmod>
+         <lastmod>2022-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pkskelly.github.io/mkdocs-sample/agile/work-item-prioritization/</loc>
-         <lastmod>2022-05-05</lastmod>
+         <lastmod>2022-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pkskelly.github.io/mkdocs-sample/agile/work-item-states/</loc>
-         <lastmod>2022-05-05</lastmod>
+         <lastmod>2022-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
