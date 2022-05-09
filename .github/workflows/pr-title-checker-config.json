@@ -8,8 +8,8 @@
       "regexpFlags": "i"
     },
     "MESSAGES": {
-      "success": "The AB# is linked to the DevOps project.",
-      "failure": "Failing CI test. PR title musty include ADO WorkItem Link.",
-      "notice": "Missing DevOps Work Item Link"
+      "success": "PR specifies link to the DevOps Work Item.",
+      "failure": "Failed PR CI Test : PR title must include ADO WorkItem Link in AB#nnnnn format.",
+      "notice": "Missing Work Item Link"
     }
   }
