@@ -23,9 +23,9 @@ if (CHECKS.regexp) {
     tests.forEach(test => {
         let outCome = re.test(test.testCase);
         if (outCome) {
-            console.log(test.testCase + ' ' + MESSAGES.success);
+            console.log('PASS:  '+ test.testCase + ' ' + MESSAGES.success);
         } else {
-            console.log(test.testCase + ' ' + MESSAGES.notice);
+            console.log('FAIL:  '+ test.testCase + ' ' + MESSAGES.notice);
         }
     });
 }

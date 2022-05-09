@@ -48,7 +48,7 @@
         "expected": false
     },
     {
-        "testCaseCase": "The link 1AB#24  is bad",
+        "testCase": "The link 1AB#24  is bad",
         "expected": false
     },
     {
