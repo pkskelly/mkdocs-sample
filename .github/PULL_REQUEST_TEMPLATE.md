@@ -46,14 +46,15 @@ Pull requests submitted to other branches will be rejected.
 
 ## Pull Request Checklist
 
+- [ ] Does the PR Title have an Azure DevOps linked WorkItem?
 - [ ] Did you follow [Branch Naming Guidelines](https://github.com/transport4/documents/wiki/Branching-Conventions)?
 - [ ] Did you PR to the correct base branch (beta vs. hotfix)?
-- [ ] Did you link the commit/PR title with the correct DvOps Work Item?
 - [ ] Did you merge master into your branch to reduce conflicts?
 - [ ] Does your code build?
-- [ ] Does your database successfully deploy?
+- [ ] Does your database successfully deploy (if it applies)?
 - [ ] Did you test each code change individually?
-- [ ] Do your changes satisfy the functional requirements or fix the bug?
+- [ ] Do your changes meet the Business Requirements and all Acceptance Criteria (User Story/Task), or fix the bug or defect?
+- [ ] Do my changes meet the Technical Requirements?
 - [ ] Is all debugging code removed (SQL print statements, console.log, debug: true, etc)?
 - [ ] Is your code clean enough for the reviewer or another developer to easily understand at first glance?
 - [ ] Did you update the work item status?

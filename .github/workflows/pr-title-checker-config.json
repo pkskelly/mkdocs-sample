@@ -4,14 +4,12 @@
       "color": "EEEEEE"
     },
     "CHECKS": {
-      "prefixes": ["fix: ", "feat: "],
-      "regexp": "AB\\(#[0-9]\\): ",
-      "regexpFlags": "i",
-      "ignoreLabels" : ["dont-check-PRs-with-this-label", "meta"]
+      "regexp": "\\b(AB#[0-9]{2,8}):*\\b",
+      "regexpFlags": "i"
     },
     "MESSAGES": {
-      "success": "All OK",
-      "failure": "Failing CI test",
+      "success": "The AB# is linked to the DevOps project.",
+      "failure": "Failing CI test. PR title musty include ADO WorkItem Link.",
       "notice": "Missing DevOps Work Item Link"
     }
   }
