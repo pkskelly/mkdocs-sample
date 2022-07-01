@@ -36,3 +36,9 @@ jobs:
         with:
           ADMIN_USERNAME:  ${{ secrets.adminUsername }}
           ADMIN_PASSWORD:  ${{ secrets.adminPassword }}
+      # CLI for Microsoft 365 runscript action option 1 (single line of script as input)
+      - name: Send email
+        uses: pnp/action-cli-runscript@v2.0.0
+        with:
+          CLI_MICROSOFT365_SCRIPT: m365 spo mail send --webUrl https://sasquatchcoding.sharepoint.com/sites/appalachiantrail --to 'peter.skelly@transport4.com' --subject 'CLI from Actions Test' --body '<h2>CLI for Microsoft 365</h2> <p>The deployment is complete.</p> <br/> Email sent via CLI for Microsoft 365 GitHub Action.'
+  
