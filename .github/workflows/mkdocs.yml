@@ -30,6 +30,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
+          
        # CLI for Microsoft 365 login action
       - name: Login to tenant
         uses: pnp/action-cli-login@v2.0.0
