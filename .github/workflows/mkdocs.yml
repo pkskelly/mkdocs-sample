@@ -32,20 +32,20 @@ jobs:
           publish_dir: ./site
           
        # CLI for Microsoft 365 login action
-      - name: Login to tenant
+      - name: Login to M365 Tenant
         uses: pnp/action-cli-login@v2.1.0
         with:
           ADMIN_USERNAME:  ${{ secrets.ADMINUSERNAME }}
           ADMIN_PASSWORD:  ${{ secrets.ADMINPASSWORD }}
 
       # CLI for Microsoft 365 runscript action option 1 (single line of script as input)
-      - name: Send email
+      - name: Copy PDF to SharePoint Site
         uses: pnp/action-cli-runscript@v2.0.0
         with:
           CLI_MICROSOFT365_SCRIPT: m365 spo file add  --webUrl https://sasquatchcoding.sharepoint.com/sites/appalachiantrail --folder 'Shared Documents' --path './site/pdf/combined.pdf'
 
       # CLI for Microsoft 365 runscript action option 1 (single line of script as input)
-      - name: Send email
+      - name: Send email confirmation
         uses: pnp/action-cli-runscript@v2.0.0
         with:
           CLI_MICROSOFT365_SCRIPT: m365 spo mail send --webUrl https://sasquatchcoding.sharepoint.com/sites/appalachiantrail --to 'pete@sasquatchcoding.com' --subject 'CLI from Actions Test' --body '<h2>CLI for Microsoft 365</h2> <p>The deployment is complete.</p> <br/> Email sent via CLI for Microsoft 365 GitHub Action.'
